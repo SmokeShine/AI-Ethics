@@ -1,0 +1,93 @@
+
+<html>
+  <head>
+  </head>
+  <body>
+  <center><h1>Model Card - IDOOU AI Budget Predicter</h1></center>
+  <h2>Model Details</h2>
+  
+<br>-- Budget Predicter AI is a model that provides
+<br>-- personalized activity recommendation
+<br>-- that they can take in an area
+
+  <h2>Intended Use</h2>
+  
+<br>-- based on weather, area
+<br>-- and users' interest, the application
+<br>-- is able to provide the right kind of recommendation
+
+  <h2>Factors</h2>
+  
+<br>-- education
+<br>-- budget
+<br>-- age
+<br>-- gender
+
+  <h2>Metrics</h2>
+  
+<br>-- balanced accuracy
+<br>-- statistical parity difference
+<br>-- Theil Index
+<br>-- Average odds difference
+
+  <h2> Training Data </h2>
+  
+<br>-- 50% randomized data after removing missing values
+
+  <h2> Evaluation Data </h2>
+  
+<br>-- 30% validation data for tuning and evaluating performance
+
+  <h2>Quantitative Analysis</h2>
+  
+<br>--
+<br>--Before...
+<br>-- Threshold corresponding to Best balanced accuracy: 0.0100
+<br>-- Best balanced accuracy: 0.0125
+<br>-- Corresponding average odds difference value: -0.4531
+<br>-- Corresponding statistical parity difference value: -0.6036
+<br>-- Corresponding equal opportunity difference value: -0.0290
+<br>-- Corresponding Theil index value: 0.6846
+<br>--After...
+<br>-- Threshold corresponding to Best balanced accuracy: 0.0100
+<br>-- Best balanced accuracy: 0.4863
+<br>-- Corresponding average odds difference value: -0.0138
+<br>-- Corresponding statistical parity difference value: -0.0164
+<br>-- Corresponding equal opportunity difference value: 0.0000
+<br>-- Corresponding Theil index value: 0.7138
+<br>--
+
+  
+  <br/><br/><b>Results of the AI model after applying the bias mitigation strategy</b><br/>
+  
+  <center>
+  
+  <img src="confusion_matrix.png"><br/>
+  <img src="permutation_importance.png"><br/>
+  <img src="cohort.png"><br/>
+
+  </center>
+
+  <h2>Ethical Considerations</h2>
+  
+<br>-- User can opt out of recommendations
+<br>-- User can opt out of selected features
+<br>-- Controlling limitations of biasness present in data by monitoring population stability index 
+
+  <h2>Caveats and Recommendations</h2>
+  
+<br>-- Certain users may opt out leading to sampled data being different from population
+<br>-- Data drift and feature distribution drift
+<br>-- Further ethical AI analyses I would apply beyond this project:
+<br>-- Zip Code to ensure certain area are always penalized
+
+  <h2>Business Consequences</h2>
+  
+
+<br>-- Positive Impact:
+Users reach a critical mass where they can services differentiated experiences 
+<br>-- Negative Impact:
+Users may distrust the AI solution leading to possible knee jerk reaction on future products
+
+  </body>
+</html>
